@@ -1,0 +1,47 @@
+{
+  "name": "read-pubspec",
+  "description": "Read a pubspec.yaml file",
+  "version": "0.0.0-development",
+  "author": "Kirk Eaton <kirk.eaton@gmail.com>",
+  "ava": {
+    "files": [
+      "test/**/*.test.js"
+    ],
+    "timeout": "2m"
+  },
+  "bugs": {
+    "url": "https://github.com/kirkeaton/read-pubspec/issues"
+  },
+  "dependencies": {
+    "yaml": "^1.10.0"
+  },
+  "devDependencies": {
+    "ava": "^3.13.0",
+    "nyc": "^15.1.0"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "homepage": "https://github.com/kirkeaton/read-pubspec#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "nyc": {
+    "include": [
+      "lib/**/*.js",
+      "index.js"
+    ],
+    "reporter": [
+      "json",
+      "text",
+      "html"
+    ],
+    "all": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirkeaton/read-pubspec.git"
+  },
+  "scripts": {
+    "test": "nyc ava -v"
+  }
+}
