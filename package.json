@@ -23,6 +23,16 @@
     "node": ">=10"
   },
   "homepage": "https://github.com/kirkeaton/read-pubspec#readme",
+  "keywords": [
+    "dart",
+    "file",
+    "flutter",
+    "load",
+    "parse",
+    "pubspec",
+    "read",
+    "yaml"
+  ],
   "license": "MIT",
   "main": "index.js",
   "nyc": {
