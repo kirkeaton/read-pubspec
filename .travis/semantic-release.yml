@@ -8,4 +8,4 @@ jobs:
         script:
           - npx semantic-release
         on:
-          branch: master
+          branch: main
