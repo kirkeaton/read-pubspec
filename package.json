@@ -2,7 +2,7 @@
   "name": "read-pubspec",
   "description": "Read a pubspec.yaml file",
   "version": "0.0.0-development",
-  "author": "Kirk Eaton <kirk.eaton@gmail.com>",
+  "author": "Kirk Eaton <contact@kirkeaton.ca>",
   "ava": {
     "files": [
       "test/**/*.test.js"
