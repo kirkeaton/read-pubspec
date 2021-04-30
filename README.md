@@ -11,24 +11,22 @@ $ npm install read-pubspec
 ## Usage
 
 ```
-const path = require('path');
-const readPubspec = require('read-pubspec');
+import path from 'path';
+import { readPubspecAsync } from 'read-pubspec';
 
 process.chdir(path.join(__dirname, '/test'));
 
-(async () => {
-  console.log(await readPubspec());
-  //=> { name: 'root', … }
+console.log(await readPubspecAsync());
+//=> { name: 'root', … }
 
-  console.log(await readPubspec({ cwd: path.join(process.cwd(), '/sub') }));
-  //=> { name: 'sub', … }
-})();
+console.log(await readPubspecAsync({ cwd: path.join(process.cwd(), '/sub') }));
+//=> { name: 'sub', … }
 
 ```
 
 ## API
 
-### readPubspec(options?)
+### readPubspecAsync(options?)
 
 Returns a `Promise<object>` with the parsed YAML.
 
