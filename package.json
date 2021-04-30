@@ -48,6 +48,9 @@
     ],
     "all": true
   },
+  "release": {
+    "branches": ["main"]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kirkeaton/read-pubspec.git"
