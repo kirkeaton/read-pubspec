@@ -23,6 +23,9 @@
     "node": ">=10"
   },
   "exports": "./index.js",
+  "files": [
+    "index.js"
+  ],
   "homepage": "https://github.com/kirkeaton/read-pubspec#readme",
   "keywords": [
     "dart",
