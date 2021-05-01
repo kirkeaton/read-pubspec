@@ -16,8 +16,7 @@
     "yaml": "^1.10.0"
   },
   "devDependencies": {
-    "ava": "^3.13.0",
-    "nyc": "^15.1.0"
+    "ava": "^3.13.0"
   },
   "engines": {
     "node": ">=12"
@@ -39,26 +38,17 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "nyc": {
-    "include": [
-      "index.js"
-    ],
-    "reporter": [
-      "json",
-      "text",
-      "html"
-    ],
-    "all": true
-  },
   "release": {
-    "branches": ["main"]
+    "branches": [
+      "main"
+    ]
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kirkeaton/read-pubspec.git"
   },
   "scripts": {
-    "test": "nyc ava -v"
+    "test": "ava -v"
   },
   "type": "module"
 }
