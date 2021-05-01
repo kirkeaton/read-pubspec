@@ -41,7 +41,6 @@
   "main": "index.js",
   "nyc": {
     "include": [
-      "lib/**/*.js",
       "index.js"
     ],
     "reporter": [
