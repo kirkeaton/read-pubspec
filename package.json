@@ -48,7 +48,6 @@
   "lint-staged": {
     "*.{ts,tsx,json,md}": "prettier --write"
   },
-  "main": "index.js",
   "prettier": {
     "printWidth": 80,
     "singleQuote": true,
