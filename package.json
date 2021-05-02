@@ -16,7 +16,10 @@
     "yaml": "^1.10.0"
   },
   "devDependencies": {
-    "ava": "^3.13.0"
+    "ava": "^3.13.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1"
   },
   "engines": {
     "node": ">=12"
@@ -26,6 +29,11 @@
     "index.js"
   ],
   "homepage": "https://github.com/kirkeaton/read-pubspec#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "keywords": [
     "dart",
     "file",
@@ -37,7 +45,16 @@
     "yaml"
   ],
   "license": "MIT",
+  "lint-staged": {
+    "*.{ts,tsx,json,md}": "prettier --write"
+  },
   "main": "index.js",
+  "prettier": {
+    "printWidth": 80,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5"
+  },
   "release": {
     "branches": [
       "main"

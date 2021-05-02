@@ -1,6 +1,6 @@
 import test from 'ava';
 import path from 'path';
-import {fileURLToPath} from 'url';
+import { fileURLToPath } from 'url';
 
 import { readPubspecAsync } from '../index.js';
 
