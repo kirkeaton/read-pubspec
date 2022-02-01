@@ -60,7 +60,7 @@
   },
   "scripts": {
     "postinstall": "husky install",
-    "test": "ava -v"
+    "test": "ava -v --no-worker-threads"
   },
   "type": "module"
 }
