@@ -13,13 +13,14 @@
     "url": "https://github.com/kirkeaton/read-pubspec/issues"
   },
   "dependencies": {
-    "yaml": "^1.10.0"
+    "yaml": "1.10.0"
   },
   "devDependencies": {
-    "ava": "^4.0.1",
-    "husky": "^7.0.0",
-    "lint-staged": "^12.1.4",
-    "prettier": "^2.2.1"
+    "ava": "4.0.1",
+    "husky": "7.0.0",
+    "lint-staged": "12.1.4",
+    "prettier": "2.2.1",
+    "semantic-release": "19.0.2"
   },
   "engines": {
     "node": ">=12"
