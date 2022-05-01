@@ -13,7 +13,7 @@
     "url": "https://github.com/kirkeaton/read-pubspec/issues"
   },
   "dependencies": {
-    "yaml": "1.10.0"
+    "yaml": "2.0.1"
   },
   "devDependencies": {
     "ava": "4.2.0",
