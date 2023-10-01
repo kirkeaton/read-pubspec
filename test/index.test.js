@@ -2,20 +2,48 @@ import test from 'ava';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-import { readPubspecAsync } from '../index.js';
+import { readPubspec } from '../index.js';
 
 const dirname = path.dirname(fileURLToPath(import.meta.url));
 process.chdir(dirname);
 const rootCwd = path.join(dirname, '/dir');
 
-test('should read pubspec.yaml from current working directory', async (t) => {
-  const pubspec = await readPubspecAsync();
+test('should read pubspec.yaml from current working directory using callback', async (t) => {
+  return new Promise((resolve, reject) => {
+    readPubspec((error, pubspec) => {
+      if (error) {
+        return reject(error);
+      }
+
+      t.is(pubspec.name, 'read_pubspec');
+      t.is(pubspec.version, '1.0.0');
+      resolve();
+    });
+  });
+});
+
+test('should read pubspec.yaml from directory provided by cwd option using callback', async (t) => {
+  return new Promise((resolve, reject) => {
+    readPubspec({ cwd: rootCwd }, (error, pubspec) => {
+      if (error) {
+        return reject(error);
+      }
+
+      t.is(pubspec.name, 'read_pubspec');
+      t.is(pubspec.version, '1.0.0');
+      resolve();
+    });
+  });
+});
+
+test('should read pubspec.yaml from current working directory using promises', async (t) => {
+  const pubspec = await readPubspec();
   t.is(pubspec.name, 'read_pubspec');
   t.is(pubspec.version, '1.0.0');
 });
 
-test('should read pubspec.yaml from directory provided by cwd option ', async (t) => {
-  const pubspec = await readPubspecAsync({ cwd: rootCwd });
+test('should read pubspec.yaml from directory provided by cwd option using promises', async (t) => {
+  const pubspec = await readPubspec({ cwd: rootCwd });
   t.is(pubspec.name, 'read_pubspec');
   t.is(pubspec.version, '1.0.0');
 });

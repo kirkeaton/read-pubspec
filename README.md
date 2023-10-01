@@ -12,23 +12,25 @@ $ npm install read-pubspec
 
 ```
 import path from 'path';
-import { readPubspecAsync } from 'read-pubspec';
+import { readPubspec } from 'read-pubspec';
 
 process.chdir(path.join(__dirname, '/test'));
 
-console.log(await readPubspecAsync());
+console.log(await readPubspec());
 //=> { name: 'root', … }
 
-console.log(await readPubspecAsync({ cwd: path.join(process.cwd(), '/sub') }));
+console.log(await readPubspec({ cwd: path.join(process.cwd(), '/sub') }));
 //=> { name: 'sub', … }
 
 ```
 
 ## API
 
-### readPubspecAsync(options?)
+### readPubspec(options?, callback?)
 
 Returns a `Promise<object>` with the parsed YAML.
+
+Optionally a callback function may be used instead.
 
 #### options
 
@@ -40,3 +42,9 @@ Type: `string`<br>
 Default: `process.cwd()`
 
 Current working directory
+
+#### callback
+
+Type: `Function`
+
+Optional callback with error as the first argument and the parsed YAML as the second.
