@@ -20,14 +20,16 @@
     "husky": "8.0.3",
     "lint-staged": "14.0.1",
     "prettier": "3.0.3",
-    "semantic-release": "22.0.5"
+    "semantic-release": "22.0.5",
+    "tsd": "0.29.0"
   },
   "engines": {
     "node": ">=16"
   },
   "exports": "./index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "homepage": "https://github.com/kirkeaton/read-pubspec#readme",
   "keywords": [
@@ -61,7 +63,8 @@
   },
   "scripts": {
     "postinstall": "husky install",
-    "test": "ava -v --no-worker-threads"
+    "test": "ava -v --no-worker-threads && tsd"
   },
-  "type": "module"
+  "type": "module",
+  "types": "./index.d.ts"
 }
