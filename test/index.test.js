@@ -1,4 +1,5 @@
-import test from 'ava';
+import assert from 'node:assert/strict'
+import test from 'node:test'
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -15,8 +16,8 @@ test('should read pubspec.yaml from current working directory using callback', a
         return reject(error);
       }
 
-      t.is(pubspec.name, 'read_pubspec');
-      t.is(pubspec.version, '1.0.0');
+      assert.equal(pubspec.name, 'read_pubspec');
+      assert.equal(pubspec.version, '1.0.0');
       resolve();
     });
   });
@@ -29,8 +30,8 @@ test('should read pubspec.yaml from directory provided by cwd option using callb
         return reject(error);
       }
 
-      t.is(pubspec.name, 'read_pubspec');
-      t.is(pubspec.version, '1.0.0');
+      assert.equal(pubspec.name, 'read_pubspec');
+      assert.equal(pubspec.version, '1.0.0');
       resolve();
     });
   });
@@ -38,12 +39,12 @@ test('should read pubspec.yaml from directory provided by cwd option using callb
 
 test('should read pubspec.yaml from current working directory using promises', async (t) => {
   const pubspec = await readPubspec();
-  t.is(pubspec.name, 'read_pubspec');
-  t.is(pubspec.version, '1.0.0');
+  assert.equal(pubspec.name, 'read_pubspec');
+  assert.equal(pubspec.version, '1.0.0');
 });
 
 test('should read pubspec.yaml from directory provided by cwd option using promises', async (t) => {
   const pubspec = await readPubspec({ cwd: rootCwd });
-  t.is(pubspec.name, 'read_pubspec');
-  t.is(pubspec.version, '1.0.0');
+  assert.equal(pubspec.name, 'read_pubspec');
+  assert.equal(pubspec.version, '1.0.0');
 });
