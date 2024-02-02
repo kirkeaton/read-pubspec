@@ -58,7 +58,7 @@
     "url": "git+https://github.com/kirkeaton/read-pubspec.git"
   },
   "scripts": {
-    "postinstall": "husky install",
+    "prepare": "husky",
     "test": "node --test && tsd"
   },
   "type": "module"
