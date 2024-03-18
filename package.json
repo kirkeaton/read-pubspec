@@ -10,8 +10,6 @@
     "yaml": "2.4.1"
   },
   "devDependencies": {
-    "husky": "9.0.11",
-    "lint-staged": "15.2.2",
     "prettier": "3.2.5",
     "semantic-release": "23.0.4",
     "tsd": "0.30.7"
@@ -39,9 +37,6 @@
     "yaml"
   ],
   "license": "MIT",
-  "lint-staged": {
-    "*.{ts,tsx,json,md}": "prettier --write"
-  },
   "packageManager": "pnpm@8.15.5",
   "prettier": {
     "printWidth": 80,
@@ -59,7 +54,6 @@
     "url": "git+https://github.com/kirkeaton/read-pubspec.git"
   },
   "scripts": {
-    "prepare": "husky",
     "test": "node --test && tsd"
   },
   "type": "module"
