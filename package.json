@@ -10,6 +10,7 @@
     "yaml": "2.4.1"
   },
   "devDependencies": {
+    "@kirkeaton/prettier-config": "1.0.1",
     "prettier": "3.2.5",
     "semantic-release": "23.0.5",
     "tsd": "0.30.7"
@@ -38,12 +39,6 @@
   ],
   "license": "MIT",
   "packageManager": "pnpm@8.15.5",
-  "prettier": {
-    "printWidth": 80,
-    "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "es5"
-  },
   "release": {
     "branches": [
       "main"
