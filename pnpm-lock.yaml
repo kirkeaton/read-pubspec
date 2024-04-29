@@ -911,8 +911,8 @@ packages:
     resolution: {integrity: sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==}
     engines: {node: '>=10'}
 
-  lru-cache@10.2.0:
-    resolution: {integrity: sha512-2bIM8x+VAf6JT4bKAljS1qUWgMsqZRPGJS6FSahIMPVvctcNhyVp7AJu7quxOW9jwkryBReKZY5tY5JYv2n/7Q==}
+  lru-cache@10.2.2:
+    resolution: {integrity: sha512-9hp3Vp2/hFQUiIwKo8XCeFVnrg8Pk3TYNPIR7tJADKi5YfcF7vEaK7avFHTlSy3kOKYaJQaalfEo6YuXdceBOQ==}
     engines: {node: 14 || >=16.14}
 
   lru-cache@6.0.0:
@@ -957,8 +957,8 @@ packages:
     resolution: {integrity: sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA==}
     engines: {node: '>=8.6'}
 
-  mime@4.0.2:
-    resolution: {integrity: sha512-rSR2L7RhEm0ifwn6lZAa+CcLy7EEl6POovp3QcnFHb/C5P4B+h6u+yCQPQaWzNdecHL8p85zRowrAjpF9F46Og==}
+  mime@4.0.3:
+    resolution: {integrity: sha512-KgUb15Oorc0NEKPbvfa0wRU+PItIEZmiv+pyAO2i0oTIVTJhlzMclU7w4RXWQrSOVH5ax/p/CkIO7KI4OyFJTQ==}
     engines: {node: '>=16'}
     hasBin: true
 
@@ -1012,8 +1012,8 @@ packages:
     resolution: {integrity: sha512-ppwTtiJZq0O/ai0z7yfudtBpWIoxM8yE6nHi1X47eFR2EWORqfbu6CnPlNsjeN683eT0qG6H/Pyf9fCcvjnnnQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  npm@10.5.2:
-    resolution: {integrity: sha512-cHVG7QEJwJdZyOrK0dKX5uf3R5Fd0E8AcmSES1jLtO52UT1enUKZ96Onw/xwq4CbrTZEnDuu2Vf9kCQh/Sd12w==}
+  npm@10.6.0:
+    resolution: {integrity: sha512-KC70Su2ZnO9v4i2t+M0sQcsRERk++XcYbK9fy4bLWzUCV2nELhSN7UAkoe42P4HQTg2LyQxcfntgYS89OEaOsA==}
     engines: {node: ^18.17.0 || >=20.5.0}
     hasBin: true
     bundledDependencies:
@@ -1033,8 +1033,6 @@ packages:
       - chalk
       - ci-info
       - cli-columns
-      - cli-table3
-      - columnify
       - fastest-levenshtein
       - fs-minipass
       - glob
@@ -1070,11 +1068,11 @@ packages:
       - npm-profile
       - npm-registry-fetch
       - npm-user-validate
-      - npmlog
       - p-map
       - pacote
       - parse-conflict-json
       - proc-log
+      - proggy
       - qrcode-terminal
       - read
       - semver
@@ -1253,8 +1251,8 @@ packages:
     resolution: {integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==}
     hasBin: true
 
-  react-is@18.2.0:
-    resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
+  react-is@18.3.1:
+    resolution: {integrity: sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==}
 
   read-package-up@11.0.0:
     resolution: {integrity: sha512-MbgfoNPANMdb4oRBNg5eqLbB2t2r+o5Ua1pNt8BqGp4I0FJZhuVSOj3PaBPni4azWuSzEdNn2evevzVmEk1ohQ==}
@@ -1800,7 +1798,7 @@ snapshots:
       https-proxy-agent: 7.0.4
       issue-parser: 7.0.0
       lodash-es: 4.17.21
-      mime: 4.0.2
+      mime: 4.0.3
       p-filter: 4.1.0
       semantic-release: 23.0.8
       url-join: 5.0.0
@@ -1816,7 +1814,7 @@ snapshots:
       lodash-es: 4.17.21
       nerf-dart: 1.0.0
       normalize-url: 8.0.1
-      npm: 10.5.2
+      npm: 10.6.0
       rc: 1.2.8
       read-pkg: 9.0.1
       registry-auth-token: 5.0.2
@@ -2416,7 +2414,7 @@ snapshots:
 
   hosted-git-info@7.0.1:
     dependencies:
-      lru-cache: 10.2.0
+      lru-cache: 10.2.2
 
   http-proxy-agent@7.0.2:
     dependencies:
@@ -2640,7 +2638,7 @@ snapshots:
       chalk: 4.1.2
       is-unicode-supported: 0.1.0
 
-  lru-cache@10.2.0: {}
+  lru-cache@10.2.2: {}
 
   lru-cache@6.0.0:
     dependencies:
@@ -2688,7 +2686,7 @@ snapshots:
       braces: 3.0.2
       picomatch: 2.3.1
 
-  mime@4.0.2: {}
+  mime@4.0.3: {}
 
   mimic-fn@4.0.0: {}
 
@@ -2748,7 +2746,7 @@ snapshots:
     dependencies:
       path-key: 4.0.0
 
-  npm@10.5.2: {}
+  npm@10.6.0: {}
 
   object-assign@4.1.1: {}
 
@@ -2866,7 +2864,7 @@ snapshots:
     dependencies:
       '@jest/schemas': 29.6.3
       ansi-styles: 5.2.0
-      react-is: 18.2.0
+      react-is: 18.3.1
 
   process-nextick-args@2.0.1: {}
 
@@ -2883,7 +2881,7 @@ snapshots:
       minimist: 1.2.8
       strip-json-comments: 2.0.1
 
-  react-is@18.2.0: {}
+  react-is@18.3.1: {}
 
   read-package-up@11.0.0:
     dependencies:
