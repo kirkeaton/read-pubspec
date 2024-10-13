@@ -7,7 +7,7 @@
     "url": "https://github.com/kirkeaton/read-pubspec/issues"
   },
   "dependencies": {
-    "yaml": "2.5.1"
+    "yaml": "2.6.0"
   },
   "devDependencies": {
     "@kirkeaton/prettier-config": "1.0.2",
