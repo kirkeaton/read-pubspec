@@ -1,7 +1,7 @@
 {
   "name": "read-pubspec",
-  "description": "Read a pubspec.yaml file",
   "version": "0.0.0-development",
+  "description": "Read a pubspec.yaml file",
   "author": "Kirk Eaton <contact@kirkeaton.ca>",
   "bugs": {
     "url": "https://github.com/kirkeaton/read-pubspec/issues"
