@@ -10,7 +10,7 @@
     "yaml": "2.6.1"
   },
   "devDependencies": {
-    "@kirkeaton/prettier-config": "1.0.2",
+    "@kirkeaton/prettier-config": "1.0.3",
     "@kirkeaton/semantic-release-config": "1.0.1",
     "prettier": "3.4.2",
     "semantic-release": "24.2.0",
