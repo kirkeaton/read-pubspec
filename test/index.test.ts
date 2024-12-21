@@ -1,9 +1,9 @@
 import assert from 'node:assert/strict';
-import test from 'node:test';
 import path from 'node:path';
+import test from 'node:test';
 import { fileURLToPath } from 'node:url';
 
-import { readPubspec } from '../index.js';
+import { readPubspec } from '../src/index.js';
 
 const dirname = path.dirname(fileURLToPath(import.meta.url));
 process.chdir(dirname);

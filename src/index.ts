@@ -1,3 +1,7 @@
+import { readFile } from 'node:fs/promises';
+import { resolve } from 'node:path';
+import { parse } from 'yaml';
+
 export interface ReadPubspecOptions {
   cwd: string;
 }
@@ -42,4 +46,10 @@ export interface Pubspec {
   topics?: string[];
 }
 
-export function readPubspec(options?: ReadPubspecOptions): Promise<Pubspec>;
+export const readPubspec = async (
+  options: ReadPubspecOptions = { cwd: process.cwd() }
+): Promise<Pubspec> => {
+  const filePath = resolve(options.cwd, 'pubspec.yaml');
+  const data = await readFile(filePath, 'utf8');
+  return parse(data);
+};
