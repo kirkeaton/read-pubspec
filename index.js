@@ -1,5 +1,5 @@
-import { readFile } from 'fs';
-import path from 'path';
+import { readFile } from 'node:fs';
+import path from 'node:path';
 import YAML from 'yaml';
 
 export const readPubspec = (options, callback) => {
