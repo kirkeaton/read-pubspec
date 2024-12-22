@@ -43,10 +43,3 @@ export interface Pubspec {
 }
 
 export function readPubspec(options?: ReadPubspecOptions): Promise<Pubspec>;
-export function readPubspec(
-  options: ReadPubspecOptions,
-  callback: (err: Error, result: Pubspec) => void
-): void;
-export function readPubspec(
-  callback: (err: Error, result: Pubspec) => void
-): void;
