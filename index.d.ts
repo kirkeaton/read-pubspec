@@ -50,9 +50,3 @@ export function readPubspec(
 export function readPubspec(
   callback: (err: Error, result: Pubspec) => void
 ): void;
-/**
- * @deprecated use readPubspec instead
- */
-export function readPubspecAsync(
-  options?: ReadPubspecOptions
-): Promise<Pubspec>;

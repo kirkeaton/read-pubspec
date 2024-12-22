@@ -24,11 +24,3 @@ export const readPubspec = (options, callback) => {
     ? read(callback.bind(null, undefined), callback)
     : new Promise(read);
 };
-
-/**
- * @deprecated use readPubspec instead
- */
-export const readPubspecAsync = async ({ cwd = process.cwd() } = {}) => {
-  const filePath = path.resolve(cwd, 'pubspec.yaml');
-  return YAML.parse(await fsAsync.readFile(filePath, 'utf8'));
-};
