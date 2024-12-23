@@ -1,6 +1,6 @@
 # read-pubspec
 
-> Read a pubspec.yaml file
+Read a pubspec.yaml file
 
 ## Install
 
