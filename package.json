@@ -41,7 +41,7 @@
     "yaml"
   ],
   "license": "MIT",
-  "packageManager": "pnpm@9.15.5",
+  "packageManager": "pnpm@10.2.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kirkeaton/read-pubspec.git"
