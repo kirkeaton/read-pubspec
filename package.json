@@ -29,6 +29,7 @@
   "files": [
     "dist"
   ],
+  "funding": "https://kirkeaton.ca/sponsor",
   "homepage": "https://github.com/kirkeaton/read-pubspec#readme",
   "keywords": [
     "dart",
