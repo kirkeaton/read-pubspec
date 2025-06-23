@@ -14,7 +14,7 @@
     "@kirkeaton/semantic-release-config": "1.0.4",
     "@kirkeaton/tsconfig": "1.0.3",
     "@types/node": "22.15.32",
-    "prettier": "3.5.3",
+    "prettier": "3.6.0",
     "semantic-release": "24.2.5",
     "tsx": "4.20.3",
     "typescript": "5.8.3"
@@ -42,7 +42,7 @@
     "yaml"
   ],
   "license": "MIT",
-  "packageManager": "pnpm@10.12.1",
+  "packageManager": "pnpm@10.12.2",
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild"
