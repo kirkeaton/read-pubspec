@@ -13,15 +13,15 @@ export interface Pubspec {
   description: string;
   homepage?: string;
   repository?: string;
-  issueTracker?: string;
+  issue_tracker?: string;
   documentation?: string;
   dependencies?: {
     [k: string]: any;
   };
-  devDependencies?: {
+  dev_dependencies?: {
     [k: string]: any;
   };
-  dependencyOverrides?: {
+  dependency_overrides?: {
     [k: string]: any;
   };
   environment: {
@@ -35,9 +35,9 @@ export interface Pubspec {
   platforms?: {
     [k: string]: any;
   };
-  publishTo?: string;
+  publish_to?: string;
   funding?: string[];
-  falseSecrets?: string[];
+  false_secrets?: string[];
   screenshots?: {
     [k: string]: any;
     description: string;
