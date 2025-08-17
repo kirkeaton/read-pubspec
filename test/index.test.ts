@@ -3,7 +3,7 @@ import path from 'node:path';
 import test from 'node:test';
 import { fileURLToPath } from 'node:url';
 
-import { readPubspec } from '../src/index.js';
+import { readPubspec } from '../src/index.ts';
 
 const dirname = path.dirname(fileURLToPath(import.meta.url));
 process.chdir(dirname);
