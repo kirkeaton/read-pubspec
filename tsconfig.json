@@ -1,6 +1,7 @@
 {
   "extends": "@kirkeaton/tsconfig",
   "compilerOptions": {
+    "rootDir": "./src",
     "types": ["node"]
   },
   "include": ["src"]
